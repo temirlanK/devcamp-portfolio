@@ -3,6 +3,8 @@ class BlogsController < ApplicationController
 
   layout "blog"
 
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+
 
   def toggle_status
     @blog = set_blog
