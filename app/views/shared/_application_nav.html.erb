@@ -9,9 +9,8 @@
       <%= link_to "Contact", contact_path, class: 'nav-link' %>
       <%= link_to "Blogs", blogs_path, class: 'nav-link' %>
       <%= link_to "Portfolios", portfolios_path, class: 'nav-link' %>
-      <a class="nav-link active" href="#">Home</a>
-      <a class="nav-link" href="#">Features</a>
-      <a class="nav-link" href="#">Contact</a>
+      <%= login_helper 'nav-link' %> 
+      
     </nav>
   </div>
 </header>
