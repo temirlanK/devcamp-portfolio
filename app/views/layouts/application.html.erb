@@ -15,9 +15,13 @@
   <body>
   <div class="cover-containser d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-    <div id="background">
-      
-    </div>
+      <%= video_tag('video.mp4', id: 'background',
+        autoplay: true,
+        loop: true,
+        muted: true,
+        poster: 'hard_drive.jpg'
+
+      ) %>
     
     <%= render "shared/application_nav"%>
       
